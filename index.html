@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <div class="titulo">
+            <h2>Lista de Tareas</h2>
+            <div class="TimeNow">
+                Fecha
+                <div class="timeRow">
+                    <div class="day"></div>
+                    <div class="month"></div>
+                </div>
+                <div class="year"></div>
+            </div>
+            <div class="cajaTiempo">
+                <p class="ubicacion"></p>
+                <p class="tempValor"></p>
+                <p class="tempDescripcion"></p>
+                <img class="icono" src="" alt="" height="128" width="128">
+            </div>
+        </div>
+        <form class="formulario">
+            <div class="div-form">
+                <input type="text" id="inputTarea" placeholder="Ingrese la tarea">
+                <button type="submit" class="btnAgregar"><i class="bi bi-plus"></i></ion-icon></button>
+            </div>
+        </form>
+    </div>
+    
+    <section>
+        <form>
+            <input type="text" id="buscar" placeholder="Buscar">
+        </form>
+        <div class="listaTareas">
+            <ul class="div-tareas">
+                <template id="tareaTemplate">
+                    <li>
+                        <div class="tareaTexto"></div>
+                        <i class="bi bi-x-lg borrar"></i>
+                    </li>
+                </template>
+            </ul>
+        </div>
+        <div class="vacio">
+            <p>No hay tareas pendiente</p>
+        </div>
+    </section>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js
+"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
